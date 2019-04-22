@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import categoryReducer from './categoryReducer';
+import categoryReducer from '../application/jokes/reducer';
 
 const rootReducer = combineReducers({
     categories: categoryReducer,
