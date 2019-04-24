@@ -1,30 +1,31 @@
-import { JOKES_CATEGORY } from "../../constants";
+import { LOAD_CATEGORIES, LOAD_CATEGORIES_SUCCESS, LOAD_CATEGORIES_FAIL } from "./actions";
 
 const initialState = {
     loading: false,
     categories: [],
-    error: null
+    error: ""
 }
 
 const categoryReducer = (state = initialState, action) => {
     switch (action.type) {
-        case JOKES_CATEGORY.LOAD:
+        case LOAD_CATEGORIES:
             return {
                 ...state,
-                loading: true
+                loading: true,
+                error: ""
             }
-        case JOKES_CATEGORY.LOAD_SUCCESS:
+        case LOAD_CATEGORIES_SUCCESS:
             return {
                 ...state,
                 loading: false,
                 categories: action.categories
             }
-        case JOKES_CATEGORY.LOAD_FAIL:
+        case LOAD_CATEGORIES_FAIL:
             return {
                 ...state,
-                error: action.error
+                error: action.error,
+                loading: false
             }
-
         default:
             return state;
     }
