@@ -10,9 +10,9 @@ class Categories extends Component {
     }
 
     render() {
-        const { categories } = this.props;
+        const { categories, loading } = this.props;
         return (
-            <CategoryList  categories={categories}/>
+            <CategoryList categories={categories} loading={loading} />
         );
     }
 }

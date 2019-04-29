@@ -3,6 +3,7 @@ import { Provider } from "react-redux"
 import configureStore from "../root/store"
 import  Header from "../components/header"
 import Categories  from "./jokes/jokes-container"
+import 'semantic-ui-css/semantic.min.css'
 
 const store = configureStore();
 
