@@ -1,4 +1,4 @@
-import { LOAD_CATEGORIES, LOAD_CATEGORIES_SUCCESS, LOAD_CATEGORIES_FAIL } from "./actions";
+import { LOAD_CATEGORIES, LOAD_CATEGORIES_SUCCESS, LOAD_CATEGORIES_FAIL } from "../actions/categoryActions";
 
 const initialState = {
     loading: false,

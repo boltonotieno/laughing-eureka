@@ -36,7 +36,7 @@ const CategoryItem = styled.button`
   cursor: pointer;
 `;
 
-const CategoryList = ({ categories, loading }) => (
+const CategoryList = ({ categories, loading, handleOpenModal }) => (
   <Content>
     <h1>Categories</h1>
     <Section>
@@ -44,7 +44,7 @@ const CategoryList = ({ categories, loading }) => (
         <PreLoader />
       ) : (
         categories.map(category => (
-          <CategoryItem key={category}>
+          <CategoryItem key={category} onClick={handleOpenModal(category)}>
             <Image src="https://assets.chucknorris.host/img/avatar/chuck-norris.png" />
             {category}
           </CategoryItem>

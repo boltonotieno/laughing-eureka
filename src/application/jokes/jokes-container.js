@@ -1,30 +1,19 @@
-import React, { Component } from 'react';
 import { connect } from "react-redux";
-import CategoryList from "./category-list";
-import { loadCategories } from "./actions"
-
-class Categories extends Component {
-
-    componentDidMount() {
-        this.props.loadCategories();
-    }
-
-    render() {
-        const { categories, loading } = this.props;
-        return (
-            <CategoryList categories={categories} loading={loading} />
-        );
-    }
-}
+import Categories from "./categories";
+import { loadCategories } from "./actions/categoryActions"
+import { loadJoke } from "./actions/jokesActions"
 
 const mapStateToProps = (state) => ({
     categories: state.categories.categories,
     loading: state.categories.loading,
     error: state.categories.error,
+    joke: state.joke.joke,
+    jokeLoading: state.joke.loading,
 })
 
 const mapDispatchToProps = dispatch => ({
     loadCategories: () => dispatch(loadCategories()),
+    loadJoke: (category) => () => dispatch(loadJoke(category))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Categories);
