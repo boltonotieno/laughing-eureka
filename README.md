@@ -1,5 +1,6 @@
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Maintainability](https://api.codeclimate.com/v1/badges/32df02bd2dca67a0a05f/maintainability)](https://codeclimate.com/github/BoltC0rt3z/laughing-eureka/maintainability)
+[![CircleCI](https://circleci.com/gh/BoltC0rt3z/laughing-eureka.svg?style=svg&circle-token=8bcfd74055d92085b2f954dd0e3bbe1728e3c9e6)](https://circleci.com/gh/BoltC0rt3z/laughing-eureka)
 
 ## Available Scripts
 
