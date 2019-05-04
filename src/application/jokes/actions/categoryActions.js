@@ -2,7 +2,7 @@ const LOAD_CATEGORIES = 'LOAD_CATEGORIES';
 const LOAD_CATEGORIES_SUCCESS = 'LOAD_CATEGORIES_SUCCESS';
 const LOAD_CATEGORIES_FAIL = 'LOAD_CATEGORIES_FAIL';
 
-const loadCategories= () => ({
+const loadCategories = () => ({
     type: LOAD_CATEGORIES,
 })
 
