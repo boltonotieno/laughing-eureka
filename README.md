@@ -1,3 +1,4 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/32df02bd2dca67a0a05f/maintainability)](https://codeclimate.com/github/BoltC0rt3z/laughing-eureka/maintainability)
 
 ## Available Scripts
 
