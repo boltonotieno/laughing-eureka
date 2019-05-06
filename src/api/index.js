@@ -13,4 +13,11 @@ const fetchCategoryJoke = async (category) => {
         return response.body;
     }
 }
-export { fetchCategories, fetchCategoryJoke };
+
+const searchJokes = async (query) => {
+    if (query) {
+        const response = await request.get(`${baseURL}/jokes/search?query=${query}`);
+        return response.body;
+    }
+}
+export { fetchCategories, fetchCategoryJoke, searchJokes };
