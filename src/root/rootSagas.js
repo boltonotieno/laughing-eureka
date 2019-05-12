@@ -1,8 +1,8 @@
 import { all } from 'redux-saga/effects';
-import { watchCategoriesLoad, watchRandomCategoryLoad, watchSearchLoad } from "../application/jokes/saga";
+import { watchCategoriesLoad, watchRandomCategoryLoad } from "../application/jokes/saga";
 
 function* rootSaga() {
-  yield all([watchCategoriesLoad(), watchRandomCategoryLoad(), watchSearchLoad()])
-}
+    yield all([ watchCategoriesLoad(), watchRandomCategoryLoad() ])
+  }
 
-export default rootSaga;
+  export default rootSaga;
