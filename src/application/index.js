@@ -3,6 +3,7 @@ import { Provider } from "react-redux"
 import configureStore from "../root/store"
 import  Header from "../components/header"
 import Categories  from "./jokes/jokes-container"
+import Search from './jokes/search-container'
 import 'semantic-ui-css/semantic.min.css'
 
 const store = configureStore();
@@ -14,6 +15,7 @@ class App extends Component {
         <Fragment>
           <Header>Laughing Eureka!</Header>
           <Categories />
+          <Search />
         </Fragment>
       </Provider>
     );
