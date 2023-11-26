@@ -4,7 +4,7 @@
 
 ## Laughing Eureka
 
-Chuck Norris Facts [Application](https://boltc0rt3z.github.io/laughing-eureka/)
+Chuck Norris Facts [Application](https://boltonotieno.github.io/laughing-eureka/)
 
 
 ## Description
